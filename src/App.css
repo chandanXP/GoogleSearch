@@ -1,38 +1,205 @@
-.App {
+.Googlesearch {
   text-align: center;
+  background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+  background-color: rgb(32, 72, 158);
+  background-position: center center;
+  height: 100vh;  
+  background-repeat: no-repeat;  
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Nav{
+  height: 8vh;
+  padding: 10px;
+  background: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.NavMenu{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  color: #444;
+  max-width:  500px;
+  margin: 0px 0px 0px 75vw ;  
+  padding: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavMenu #close{
+  font-size: 1.6rem;
+  margin: auto;
+  position: relative;
+  top: 4px;
+  background: none;
+  outline: none;
+  color: #fff;
+  display: none;
+}
+
+.NavMenu #open{
+  font-size: 1.6rem;
+  margin: auto;
+  position: relative;
+  top: 4px;
+  background: none;
+  outline: none;
+  color: #fff;
+}
+.NavMenu a{
+  position: relative;
+  top: 8px;
+  text-decoration: none;
+  color: #fff;
+}
+.menuCell{
+  margin: auto;
+}
+.NavMenu userIcon{
+  background: none;
+  color: #fff;
+}
+
+.AppModal{
+  position: fixed;
+  border-radius: 6px;
+  color: #fff;
+  width: 20vw;
+  float: right;
+  margin-right: 20px;
+  height: fit-content;
+  display: none;
+  z-index: 1;
+  right:20px;
+}
+
+.AppGrid::-webkit-scrollbar{
+  border-radius: 8px;
+  width: 18px;
+}
+.AppGrid::-webkit-scrollbar-track{
+  background: #303030;
+  border-radius: 8px;
+  border-left: 5px solid #303030;
+  border-right: 5px solid #303030;
+
+}
+
+.AppGrid::-webkit-scrollbar-thumb{
+  background: #909090;
+  border: 6px solid #303030;
+  border-radius: 8px;
+}
+.Appcell{
+  height: auto;
+  width: auto;
+  padding: 2px;
+  position:relative;
+}
+.modalcell{
+  height: auto;
+  width: auto;
+  position:relative;
+}
+ 
+.modalcell a{
+  height: auto;
+  width: auto;
+  padding: 15px;
+  background: none;
+  position:relative;
+}
+.modalAppLogo{
+  margin: auto;
+  position:relative;
+}
+
+.Body{
+  height: 88vh;
+  padding-top: 0px;
+  position: relative;
+}
+.Banner{
+  display: block;
+  position: relative;
+}
+.BannerLogo{
+  height: 25%;
+  width: 25%; 
+  position: relative;
+  
+}
+.Layout{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  width:  36%;
+  height: 48px;
+  border-radius: 26px;
+  margin: auto;
+  padding: 0px 20px 0px 20px;
+  background-color: #fff;
+
+  }
+.searchInput{
+  width: 34vw;
+  border: none;
+  display: flex;
+  margin: auto auto;
+  height: 46px;
+  outline: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+.SearchIcon {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 2px;
+  margin-right: 10px;
+  color: rgba(56, 56, 58, 0.774);
+ 
+}
+.MicrophoneIcon {
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 2px;
+  margin-left: 10px;
+  color: rgb(53, 157, 226);
+}
+.Recent{
+  width:  36%;
+  margin: auto;
+  height: 30vh;
+  margin-top: 3.6rem;
+  padding-right: 20px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  color: #444;
+  max-width:  880px;
 }
 
-.App-link {
-  color: #61dafb;
+.cell{
+  height: auto;
+  width: auto;
+  padding: 25px;
+  background: none;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cell:hover{
+  background-color: rgba(255, 255, 255, 0.185);
+  animation: linear;
+}
+ 
+ 
+.cell a{
+  text-decoration: none;
+}
+.cell p{
+  position: relative;
+  top: 8px;
+  color: #fff;
+}
+.recentAppLogo{
+  margin: auto;
+  border: 10px solid white;
+  background-color: #fff;
 }

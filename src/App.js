@@ -62,13 +62,13 @@ function App() {
               <button onClick={funcClose} id="close"><FontAwesomeIcon icon={faTh} className="closeButton"/></button>
               <button onClick={funcDropDown} id="open"><FontAwesomeIcon icon={faTh} className="menuButton"/></button>
             </div>
-            <div className="menuCell">
+            {/* <div className="menuCell">
               <Avatar
                 className="userIcon"
                 src={userIcon}
                 alt="UserIcon"
               />
-            </div>
+            </div> */}
              
           </div>
            

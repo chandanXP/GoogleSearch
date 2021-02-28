@@ -17,15 +17,14 @@
 
 .NavMenu{
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(3, auto);
   color: #444;
-  max-width:  500px;
+  max-width:  400px;
   margin: 0px 0px 0px 75vw ;  
   padding: auto;
 }
 
 .NavMenu #close{
-  font-size: 1.6rem;
   margin: auto;
   position: relative;
   top: 4px;
@@ -33,16 +32,29 @@
   outline: none;
   color: #fff;
   display: none;
+  border: none;
+  font-size: 1.6rem;
 }
 
 .NavMenu #open{
-  font-size: 1.6rem;
   margin: auto;
   position: relative;
   top: 4px;
   background: none;
   outline: none;
+  border: none;
   color: #fff;
+  font-size: 1.6rem;
+
+}
+#open:hover{
+  background: #90909044;
+  cursor:pointer;
+}
+#close:hover{
+  background: #90909044;
+  cursor:pointer;
+
 }
 .NavMenu a{
   position: relative;
@@ -53,9 +65,14 @@
 .menuCell{
   margin: auto;
 }
-.NavMenu userIcon{
-  background: none;
+.userIcon{
+  background: red;
   color: #fff;
+  display: none;
+   
+}
+.userIcon:hover{
+  background: rgba(255, 255, 255, 0.185);
 }
 
 .AppModal{
@@ -69,6 +86,24 @@
   display: none;
   z-index: 1;
   right:20px;
+}
+
+.AppGrid{
+  border: 1px solid black;
+  height: 400px;
+  width: 320px;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-right: 20px;
+  position: fixed;
+  background-color: #303030;
+  border-radius: 8px;
+  right: 20px;
+  box-shadow: rgba(12, 12, 12, 0.356) 2px 2px 2px 2px;
+
 }
 
 .AppGrid::-webkit-scrollbar{
@@ -156,12 +191,18 @@
   color: rgba(56, 56, 58, 0.774);
  
 }
+.SearchIcon:hover{
+  cursor: pointer;
+}
 .MicrophoneIcon {
   font-size: 1.2rem;
   position: relative;
   bottom: 2px;
   margin-left: 10px;
   color: rgb(53, 157, 226);
+}
+.MicrophoneIcon:hover{
+  cursor: pointer;
 }
 .Recent{
   width:  36%;
